@@ -10,7 +10,7 @@ openAPI:
       x-k8s-cli:
         setter:
           name: name
-          value: kubeflow-2
+          value: kubeflow-2edw
           isSet: true
     io.k8s.cli.setters.gcloud.core.project:
       x-k8s-cli:
@@ -28,19 +28,19 @@ openAPI:
       x-k8s-cli:
         setter:
           name: gcloud.compute.zone
-          value: us-central1-c
+          value: us-central1-a
           isSet: true
     io.k8s.cli.setters.cloudsql-name:
       x-k8s-cli:
         setter:
           name: cloudsql-name
-          value: kubeflow-tutorial-328115-kfp
+          value: kubeflow-2edw
           isSet: true
     io.k8s.cli.setters.bucket-name:
       x-k8s-cli:
         setter:
           name: bucket-name
-          value: kubeflow-tutorial-328115-kfp
+          value: kubeflow-2edw
           isSet: true
     io.k8s.cli.setters.mgmt-ctxt:
       x-k8s-cli:

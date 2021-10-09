@@ -9,9 +9,23 @@ export MGMT_NAME=management
 export MGMT_DIR=$PWD/management
 export ZONE=us-central1-a
 export LOCATION=$ZONE
+export K8S_VERSION=1.20
 # required, but should be defined elsewhere
-export KUBECONFIG=$KUBECONFIG
-export KUBE_GITHUB_TOKEN=$KUBE_GITHUB_TOKEN
-export CLIENT_ID=$CLIENT_ID
-export CLIENT_SECRET=$CLIENT_SECRET
+if [[ -z "${KUBECONFIG}" ]]; then
+    echo "KUBECONFIG env var is required"
+    exit 1
+fi
+if [[ -z "${KUBE_GITHUB_TOKEN}" ]]; then
+    echo "KUBE_GITHUB_TOKEN env var is required"
+    exit 1
+fi
+if [[ -z "${CLIENT_ID}" ]]; then
+    echo "CLIENT_ID env var is required"
+    exit 1
+fi
+if [[ -z "${CLIENT_SECRET}" ]]; then
+    echo "CLIENT_SECRET env var is required"
+    exit 1
+fi
+
 

@@ -19,7 +19,7 @@ metadata:
     # If set to true, the force-destroy directive cleans up the objects within a
     # storage bucket before issuing the delete command.
     cnrm.cloud.google.com/force-destroy: "true"
-  name: kubeflow-tutorial-328115-kfp # {"$kpt-set":"bucket-name"}
+  name: kubeflow-2edw # {"$kpt-set":"bucket-name"}
 # Reference:
 # https://cloud.google.com/config-connector/docs/reference/resource-docs/storage/storagebucket
 spec:

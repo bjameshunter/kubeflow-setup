@@ -16,7 +16,7 @@ openAPI:
       x-k8s-cli:
         setter:
           name: name
-          value: kubeflow-2
+          value: kubeflow-2edw
           isSet: true
     io.k8s.cli.setters.gcloud.core.project:
       x-k8s-cli:

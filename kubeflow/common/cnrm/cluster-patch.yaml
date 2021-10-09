@@ -17,7 +17,7 @@
 apiVersion: container.cnrm.cloud.google.com/v1beta1
 kind: ContainerCluster
 metadata:
-  name: kubeflow-2 # {"$kpt-set":"name"}
+  name: kubeflow-2edw # {"$kpt-set":"name"}
 # To replace default nodepool with your own, uncomment the following two lines
 # and add "nodepool-example.yaml" to "resources" field of kustomization.yaml.
 # annotations:

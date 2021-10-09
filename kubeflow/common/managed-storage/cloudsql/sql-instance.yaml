@@ -15,7 +15,7 @@
 apiVersion: sql.cnrm.cloud.google.com/v1beta1
 kind: SQLInstance
 metadata:
-  name: kubeflow-tutorial-328115-kfp # {"$kpt-set":"cloudsql-name"}
+  name: kubeflow-2edw # {"$kpt-set":"cloudsql-name"}
 # Spec reference:
 # https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance
 # Other examples to enable private cloudsql or high availability:
@@ -29,4 +29,4 @@ spec:
     tier: db-custom-1-3840
     availabilityType: ZONAL
     locationPreference:
-      zone: us-central1-c # {"$kpt-set":"gcloud.compute.zone"}
+      zone: us-central1-a # {"$kpt-set":"gcloud.compute.zone"}

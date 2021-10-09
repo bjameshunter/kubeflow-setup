@@ -19,5 +19,5 @@ metadata:
 # Reference:
 # https://github.com/kubeflow/pipelines/blob/1.5.0/manifests/kustomize/base/installs/generic/pipeline-install-config.yaml
 data:
-  bucketName: kubeflow-tutorial-328115-kfp # {"$kpt-set":"bucket-name"}
+  bucketName: kubeflow-2edw # {"$kpt-set":"bucket-name"}
   gcsProjectId: kubeflow-tutorial-328115 # {"$kpt-set": "gcloud.core.project"}

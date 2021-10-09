@@ -30,13 +30,13 @@ openAPI:
       x-k8s-cli:
         setter:
           name: name
-          value: kubeflow-2
+          value: kubeflow-2edw
           isSet: true
     io.k8s.cli.setters.gcloud.compute.zone:
       x-k8s-cli:
         setter:
           name: gcloud.compute.zone
-          value: us-central1-c
+          value: us-central1-a
           isSet: true
     io.k8s.cli.setters.gcloud.compute.region:
       x-k8s-cli:

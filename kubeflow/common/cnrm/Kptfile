@@ -32,7 +32,7 @@ openAPI:
       x-k8s-cli:
         setter:
           name: name
-          value: kubeflow-2
+          value: kubeflow-2edw
           isSet: true
     io.k8s.cli.setters.location:
       x-k8s-cli:

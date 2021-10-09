@@ -1,9 +1,9 @@
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-cloudbuild # {"$kpt-set":"name-user-cloudbuild"}
+  name: kubeflow-2edw-user-cloudbuild # {"$kpt-set":"name-user-cloudbuild"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/cloudbuild.builds.editor
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -13,9 +13,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-viewer # {"$kpt-set":"name-user-viewer"}
+  name: kubeflow-2edw-user-viewer # {"$kpt-set":"name-user-viewer"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/viewer
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -25,9 +25,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-source # {"$kpt-set":"name-user-source"}
+  name: kubeflow-2edw-user-source # {"$kpt-set":"name-user-source"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/source.admin
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -37,9 +37,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-storage # {"$kpt-set":"name-user-storage"}
+  name: kubeflow-2edw-user-storage # {"$kpt-set":"name-user-storage"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/storage.admin
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -49,9 +49,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-bigquery # {"$kpt-set":"name-user-bigquery"}
+  name: kubeflow-2edw-user-bigquery # {"$kpt-set":"name-user-bigquery"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/bigquery.admin
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -61,9 +61,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-dataflow # {"$kpt-set":"name-user-dataflow"}
+  name: kubeflow-2edw-user-dataflow # {"$kpt-set":"name-user-dataflow"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/dataflow.admin
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -73,9 +73,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-ml # {"$kpt-set":"name-user-ml"}
+  name: kubeflow-2edw-user-ml # {"$kpt-set":"name-user-ml"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/ml.admin
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -85,9 +85,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-dataproc # {"$kpt-set":"name-user-dataproc"}
+  name: kubeflow-2edw-user-dataproc # {"$kpt-set":"name-user-dataproc"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/dataproc.editor
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -97,9 +97,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-cloudsql # {"$kpt-set":"name-user-cloudsql"}
+  name: kubeflow-2edw-user-cloudsql # {"$kpt-set":"name-user-cloudsql"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/cloudsql.admin
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -109,9 +109,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-logging # {"$kpt-set":"name-user-logging"}
+  name: kubeflow-2edw-user-logging # {"$kpt-set":"name-user-logging"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/logging.logWriter
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -121,9 +121,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-metricwriter # {"$kpt-set":"name-user-metricwriter"}
+  name: kubeflow-2edw-user-metricwriter # {"$kpt-set":"name-user-metricwriter"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/monitoring.metricWriter
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
@@ -133,9 +133,9 @@ spec:
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: kubeflow-2-user-monitoringviewer # {"$kpt-set":"name-user-monitoringviewer"}
+  name: kubeflow-2edw-user-monitoringviewer # {"$kpt-set":"name-user-monitoringviewer"}
 spec:
-  member: serviceAccount:kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
+  member: serviceAccount:kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-service-account"}
   role: roles/monitoring.viewer
   resourceRef:
     apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1

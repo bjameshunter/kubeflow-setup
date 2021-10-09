@@ -7,7 +7,7 @@ kind: Kustomization
 # namespaces match project names.
 namespace: kubeflow-tutorial-328115 # {"$kpt-set":"project"}
 commonLabels:
-  kf-name: kubeflow-2 # {"$kpt-set":"name-label"}
+  kf-name: kubeflow-2edw # {"$kpt-set":"name-label"}
 resources:
 # The default Google Cloud resources.
 - ../cluster/upstream

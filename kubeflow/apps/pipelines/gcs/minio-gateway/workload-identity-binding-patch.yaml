@@ -17,4 +17,4 @@ kind: ServiceAccount
 metadata:
   name: kubeflow-pipelines-minio-gcs-gateway
   annotations:
-    iam.gke.io/gcp-service-account: kubeflow-2-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-sa-ref"}
+    iam.gke.io/gcp-service-account: kubeflow-2edw-user@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"user-sa-ref"}

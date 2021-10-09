@@ -18,7 +18,7 @@
 apiVersion: container.cnrm.cloud.google.com/v1beta1
 kind: ContainerNodePool
 metadata:
-  name: kubeflow-2-example # {"$kpt-set":"node-pool-example"}
+  name: kubeflow-2edw-example # {"$kpt-set":"node-pool-example"}
 # Refer to https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool
 # for detailed fields and documentation.
 spec:
@@ -37,8 +37,8 @@ spec:
     metadata:
       disable-legacy-endpoints: "true"
     serviceAccountRef:
-      name: kubeflow-2-vm@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"vm-sa-ref"}
+      name: kubeflow-2edw-vm@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"vm-sa-ref"}
     workloadMetadataConfig:
       nodeMetadata: GKE_METADATA_SERVER
   clusterRef:
-    name: kubeflow-2 # {"$kpt-set":"name"}
+    name: kubeflow-2edw # {"$kpt-set":"name"}
