@@ -1,0 +1,12 @@
+apiVersion: storage.cnrm.cloud.google.com/v1beta1
+kind: StorageBucket
+metadata:
+  annotations:
+    cnrm.cloud.google.com/force-destroy: "true"
+  labels:
+    app: managed-storage
+    kf-name: kubeflow-2
+  name: kubeflow-tutorial-328115-kfp
+  namespace: kubeflow-tutorial-328115
+spec:
+  location: us-central1

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: knative-serving
+  labels:
+    istio.io/rev: asm-193-2 # {"$kpt-set":"asm-label"}
+    istio-injection: null

@@ -1,0 +1,14 @@
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  labels:
+    kf-name: kubeflow-2
+  name: kubeflow-2-admin-kubeflow-wi
+  namespace: kubeflow-tutorial-328115
+spec:
+  member: serviceAccount:kubeflow-tutorial-328115.svc.id.goog[kubeflow/kf-admin]
+  resourceRef:
+    apiVersion: iam.cnrm.cloud.google.com/v1beta1
+    kind: IAMServiceAccount
+    name: kubeflow-2-admin
+  role: roles/iam.workloadIdentityUser

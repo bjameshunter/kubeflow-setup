@@ -1,0 +1,14 @@
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  name: cnrm-system-kubeflow-tutorial-328115-owner # {"$kpt-set":"managed-project-policy-name"}
+  namespace: kubeflow-tutorial-328115 # {"$kpt-set":"managed-project"}
+spec:
+  member: serviceAccount:management-cnrm-system@kubeflow-tutorial-328115.iam.gserviceaccount.com # {"$kpt-set":"managed-project-owner-member"}
+  role: roles/owner
+  resourceRef:
+    apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+    kind: Project
+    # N.B. With anthoscli 0.2.4 this is just the project id
+    # and not projects/MANAGED_PROJECT as used by the CNRM docs.
+    external: kubeflow-tutorial-328115 # {"$kpt-set":"managed-project"}

@@ -1,0 +1,14 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: cert-manager
+packageMetadata:
+  shortDescription: Cert Manager package
+openAPI:
+  definitions:
+    io.k8s.cli.setters.name:
+      x-k8s-cli:
+        setter:
+          name: name
+          value: kubeflow-2
+          isSet: true

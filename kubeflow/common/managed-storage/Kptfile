@@ -1,0 +1,50 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: storage
+packageMetadata:
+  shortDescription: sample description
+openAPI:
+  definitions:
+    io.k8s.cli.setters.name:
+      x-k8s-cli:
+        setter:
+          name: name
+          value: kubeflow-2
+          isSet: true
+    io.k8s.cli.setters.gcloud.core.project:
+      x-k8s-cli:
+        setter:
+          name: gcloud.core.project
+          value: kubeflow-tutorial-328115
+          isSet: true
+    io.k8s.cli.setters.gcloud.compute.region:
+      x-k8s-cli:
+        setter:
+          name: gcloud.compute.region
+          value: us-central1
+          isSet: true
+    io.k8s.cli.setters.gcloud.compute.zone:
+      x-k8s-cli:
+        setter:
+          name: gcloud.compute.zone
+          value: us-central1-c
+          isSet: true
+    io.k8s.cli.setters.cloudsql-name:
+      x-k8s-cli:
+        setter:
+          name: cloudsql-name
+          value: kubeflow-tutorial-328115-kfp
+          isSet: true
+    io.k8s.cli.setters.bucket-name:
+      x-k8s-cli:
+        setter:
+          name: bucket-name
+          value: kubeflow-tutorial-328115-kfp
+          isSet: true
+    io.k8s.cli.setters.mgmt-ctxt:
+      x-k8s-cli:
+        setter:
+          name: mgmt-ctxt
+          value: management
+          isSet: true

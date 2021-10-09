@@ -1,0 +1,14 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: kubeflow-namespace
+packageMetadata:
+  shortDescription: kubeflow-namespace config.
+openAPI:
+  definitions:
+    io.k8s.cli.setters.asm-label:
+      x-k8s-cli:
+        setter:
+          name: asm-label
+          value: asm-193-2
+          isSet: true

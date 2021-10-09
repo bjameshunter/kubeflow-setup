@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  ingressName: envoy-ingress
+  istioNamespace: istio-system
+  oauthSecretName: kubeflow-oauth
+  appName: kubeflow-2 # {"$kpt-set":"name-label"}
+  hostname: kubeflow-2.endpoints.kubeflow-tutorial-328115.cloud.goog # {"$kpt-set":"hostname"}
+  ipName: kubeflow-2-ip # {"$kpt-set":"ip-name"}
+  project: "kubeflow-tutorial-328115" # {"$kpt-set":"gcloud.core.project"}
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: iap-ingress-config

@@ -1,0 +1,52 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: profiles
+packageMetadata:
+  shortDescription: profile controller config.
+openAPI:
+  definitions:
+    io.k8s.cli.setters.asm-label:
+      x-k8s-cli:
+        setter:
+          name: asm-label
+          value: asm-193-2
+          isSet: true
+    io.k8s.cli.setters.name:
+      x-k8s-cli:
+        setter:
+          name: name
+          value: kubeflow-2
+          isSet: true
+    io.k8s.cli.setters.gcloud.core.project:
+      x-k8s-cli:
+        setter:
+          name: gcloud.core.project
+          value: kubeflow-tutorial-328115
+          isSet: true
+    io.k8s.cli.setters.email:
+      x-k8s-cli:
+        setter:
+          name: email
+          value: bjameshunter@gmail.com
+          isSet: true
+    io.k8s.cli.substitutions.admin-sa-ref:
+      x-k8s-cli:
+        substitution:
+          name: admin-sa-ref
+          pattern: ${name}-admin@${gcloud.core.project}.iam.gserviceaccount.com
+          values:
+          - marker: ${name}
+            ref: '#/definitions/io.k8s.cli.setters.name'
+          - marker: ${gcloud.core.project}
+            ref: '#/definitions/io.k8s.cli.setters.gcloud.core.project'
+    io.k8s.cli.substitutions.gcp-sa:
+      x-k8s-cli:
+        substitution:
+          name: gcp-sa
+          pattern: ${name}-user@${gcloud.core.project}.iam.gserviceaccount.com
+          values:
+          - marker: ${name}
+            ref: '#/definitions/io.k8s.cli.setters.name'
+          - marker: ${gcloud.core.project}
+            ref: '#/definitions/io.k8s.cli.setters.gcloud.core.project'

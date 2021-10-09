@@ -1,0 +1,14 @@
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  labels:
+    kf-name: kubeflow-2
+  name: kubeflow-2-admin-cloudsql
+  namespace: kubeflow-tutorial-328115
+spec:
+  member: serviceAccount:kubeflow-2-admin@kubeflow-tutorial-328115.iam.gserviceaccount.com
+  resourceRef:
+    apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+    external: projects/kubeflow-tutorial-328115
+    kind: Project
+  role: roles/cloudsql.admin

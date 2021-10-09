@@ -1,0 +1,26 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: instance
+packageMetadata:
+  shortDescription: sample description
+openAPI:
+  definitions:
+    io.k8s.cli.setters.gcloud.core.project:
+      x-k8s-cli:
+        setter:
+          name: gcloud.core.project
+          value: kubeflow-tutorial-328115
+          isSet: true
+    io.k8s.cli.setters.name:
+      x-k8s-cli:
+        setter:
+          name: name
+          value: kubeflow-2
+          isSet: true
+    io.k8s.cli.setters.location:
+      x-k8s-cli:
+        setter:
+          name: location
+          value: "us-central1-a"
+          isSet: true
