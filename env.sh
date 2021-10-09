@@ -11,7 +11,7 @@ export ZONE=us-central1-a
 export LOCATION=$ZONE
 # required, but should be defined elsewhere
 export KUBECONFIG=$KUBECONFIG
-export GITHUB_TOKEN=$GITHUB_TOKEN
+export KUBE_GITHUB_TOKEN=$KUBE_GITHUB_TOKEN
 export CLIENT_ID=$CLIENT_ID
 export CLIENT_SECRET=$CLIENT_SECRET
 
