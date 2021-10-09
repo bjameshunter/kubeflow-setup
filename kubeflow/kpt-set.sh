@@ -57,7 +57,7 @@ fi
 kpt cfg set -R .  mgmt-ctxt "${MGMT_NAME}"
 
 kpt cfg set -R .  name "${KF_NAME}"
-kpt cfg set -R .  gcloud.core.project "${KF_PROJECT}"
+kpt cfg set -R .  gcloud.core.project "${PROJECT_ID}"
 kpt cfg set -R .  gcloud.project.projectNumber "${KF_PROJECT_NUMBER}"
 kpt cfg set -R .  location "${LOCATION}"
 kpt cfg set -R .  k8s_version "${K8S_VERSION}"

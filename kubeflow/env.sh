@@ -1,14 +1,16 @@
 # 1. Edit <placeholders>.
 # 2. Other env vars are configurable, but with default values set below.
-export KF_SUFFIX=$(tr -dc a-z0-9 </dev/urandom | head -c 4 ; echo '')
+if [[ "$KF_SUFFIX" = "" ]]; then
+    export KF_SUFFIX=$(tr -dc a-z0-9 </dev/urandom | head -c 4 ; echo '')
+fi
 # The KF_PROJECT env var contains the Google Cloud project ID where Kubeflow
 # cluster will be deployed to.
 
-export KF_PROJECT=kubeflow-$KF_SUFFIX
+export KF_PROJECT=kubeflow-$PROJECT_ID
 # You can get your project number by running this command
 # (replace ${KF_PROJECT} with the actual project ID):
 # gcloud projects describe --format='value(projectNumber)' "${KF_PROJECT}"
-export KF_PROJECT_NUMBER=$(gcloud projects describe --format='value(projectNumber)' "${KF_PROJECT}")
+export KF_PROJECT_NUMBER=$(gcloud projects describe --format='value(projectNumber)' "$PROJECT_ID")
 # ADMIN_EMAIL env var is the Kubeflow admin's email address, it should be
 # consistent with login email on Google Cloud.
 # Example: admin@gmail.com
@@ -34,7 +36,7 @@ export MGMTCTXT=$MGMT_NAME
 # * only contain lowercase letters, numbers and "-"s (hyphens)
 # * end with a number or a letter
 # * contain no more than 24 characters
-export KF_NAME=kubeflow-2
+export KF_NAME=kubeflow
 # Default values for managed storage used by Kubeflow Pipelines (KFP), you can
 # override as you like.
 # The CloudSQL instance and Cloud Storage bucket instance are created during
